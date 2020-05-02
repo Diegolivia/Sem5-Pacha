@@ -4,6 +4,28 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-stretch: expanded;
+    letter-spacing: 4%;
+}
+
+section{
+    padding: 15px 10%;
+    width: 80%;
+}
+
+p{
+    Font-Size: 20px;
+    padding: 2% 0 5% 0;
+}
+
+h1, h2, h3, h4{
+    color:#1F3F68
+}
+
+h5{
+    color:#7a7a7a
 }
 
 /*=============================BARRA DE NAV=============================================*/
@@ -44,6 +66,8 @@ li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    width: 100%;
+    padding: 0;
 }
 
 #Banner img {
@@ -56,35 +80,35 @@ li a:hover {
     top: 100%;
     color: white;
     padding: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    Font-Style: Regular;
-    font-stretch: expanded;
 }
 
 #Banner h1 {
     Font-Size: 44px;
     padding: 20px;
+    color: white;
 }
 
 #Banner p {
     Font-Size: 20px;
+    padding: 15px 10%;
+    width: 80%;
 }
 
 /*===================================BARRA BUSCADORA==========================================*/
 
 #Searchbar {
-    width: 100%;
+    width: 80%;
     position: relative;
     display: flex;
     font-size: 14px;
-    padding: 25px 15%;
+    padding: 25px 10%;
 }
 
 .searchTerm {
     border: 0px solid;
     background-color: lightgray;
     color: grey;
-    width: 70%;
+    width: 100%;
     border-radius: 0 10px 10px 0 ;    
     border-left: none;
 }
@@ -98,28 +122,87 @@ li a:hover {
     border: 0px solid;
     background-color: lightgray;
     color: grey;
-
     width: 20px;    
     border-radius: 10px 0 0 10px;
     border-right: none;
+}
 
+.searchTerm img {
+    width: 100%;
 }
 
 /*===================================MAIN STORY==========================================*/
 
 #MainStory {
+    padding: 15px 10%;
+    width: 80%;
     column-count: 2;
-    padding: 5%;
+  }
+
+  #MainStory h2{
+      font-size: 44px;
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      letter-spacing: 4%;
+  }
+
+  #MainStory img{
+    width: 100%;
   }
   
-
 /*===================================RELATED STORY==========================================*/
 #RelatedStory{
-    column-count: 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+#MinorStoryBlock{
+    width: 30%;
+}
+
+#MinorStoryBlock img{
+    width: 100%;
+}
+
+#AuthorCred{
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#AuthRight{
+    width: 70%;
+    color: grey;
+}
+
+#AuthLeft{
+    width: 30%;
+    display: flex;
+    justify-content: right;
+}
+
+#AuthLeft img{
+    height: fit-content;
+    width: auto;
 }
 
 /*===================================ARTICLE STORY==========================================*/
 
 #ArticleCard{
-    column-count: 2;
+    display: flex;
+    padding: 3% 0 0 0 ;
+}
+
+#ArtCardRight{
+    color: white;
+    width: 30%;
+}
+
+#ArtCardLeft{
+    width: 70%;
+    padding: 0 0 0 5%;
+}
+
+#ArtCardPhoto {
+    width: 100%;
 }
