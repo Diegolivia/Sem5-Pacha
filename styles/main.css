@@ -1,1 +1,117 @@
 /*Las fuentes usadas son Arial Y Helvetica*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*=============================BARRA DE NAV=============================================*/
+
+nav {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+ul, a {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+li {
+    display: inline-block;
+}
+
+li a:hover {
+    color: darkblue;
+    font-weight: bolder;
+}
+
+/*===================================BRUCE BANNER==========================================*/
+
+#Banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.ibb.co/wJHHfYX/banner.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#Banner img {
+    width: 100%;
+}
+
+#Banner div {
+    text-align: center;
+    position: relative;
+    top: 100%;
+    color: white;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    Font-Style: Regular;
+    font-stretch: expanded;
+}
+
+#Banner h1 {
+    Font-Size: 44px;
+    padding: 20px;
+}
+
+#Banner p {
+    Font-Size: 20px;
+}
+
+/*===================================BARRA BUSCADORA==========================================*/
+
+#Searchbar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    font-size: 14px;
+    padding: 25px 15%;
+}
+
+.searchTerm {
+    border: 0px solid;
+    background-color: lightgray;
+    color: F4F4F4;
+
+    width: 70%;
+    border-radius: 0 10px 10px 0 ;    
+    border-left: none;
+}
+
+.searchTerm:focus {
+    color: black;
+}
+
+.SearchIcon {
+    padding: 15px;
+    border: 0px solid;
+    background-color: lightgray;
+    color: F4F4F4;
+
+    width: 20px;    
+    border-radius: 10px 0 0 10px;
+    border-right: none;
+
+}
+
+/*===================================MAIN STORY==========================================*/
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
