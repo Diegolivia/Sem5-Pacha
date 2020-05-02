@@ -83,8 +83,7 @@ li a:hover {
 .searchTerm {
     border: 0px solid;
     background-color: lightgray;
-    color: F4F4F4;
-
+    color: grey;
     width: 70%;
     border-radius: 0 10px 10px 0 ;    
     border-left: none;
@@ -98,7 +97,7 @@ li a:hover {
     padding: 15px;
     border: 0px solid;
     background-color: lightgray;
-    color: F4F4F4;
+    color: grey;
 
     width: 20px;    
     border-radius: 10px 0 0 10px;
@@ -108,10 +107,19 @@ li a:hover {
 
 /*===================================MAIN STORY==========================================*/
 
-.row {
-    display: flex;
+#MainStory {
+    column-count: 2;
+    padding: 5%;
   }
   
-  .column {
-    flex: 50%;
-  }
+
+/*===================================RELATED STORY==========================================*/
+#RelatedStory{
+    column-count: 3;
+}
+
+/*===================================ARTICLE STORY==========================================*/
+
+#ArticleCard{
+    column-count: 2;
+}
