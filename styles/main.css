@@ -10,35 +10,40 @@
     letter-spacing: 4%;
 }
 
-section{
+section {
     padding: 15px 10%;
     width: 80%;
+    max-width: 1080;
 }
 
-p{
-    Font-Size: 20px;
+p {
+    Font-Size: 1.5vw;
+    padding: 2% 0 5% 0;
+    color: #999999;
+}
+
+h1, h2, h3, h4 {
+    color: #1F3F68;
+}
+
+h1, h2 {
     padding: 2% 0 5% 0;
 }
 
-h1, h2, h3, h4{
-    color:#1F3F68
-}
-
-h5{
-    color:#7a7a7a
+h5 {
+    color: #7a7a7a
 }
 
 /*=============================BARRA DE NAV=============================================*/
 
 nav {
-    background-color: grey;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
 }
 
-ul, a {
+nav ul, nav a {
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -48,11 +53,11 @@ ul, a {
     padding: 0 10px;
 }
 
-li {
+nav li {
     display: inline-block;
 }
 
-li a:hover {
+nav  li a:hover {
     color: darkblue;
     font-weight: bolder;
 }
@@ -109,7 +114,7 @@ li a:hover {
     background-color: lightgray;
     color: grey;
     width: 100%;
-    border-radius: 0 10px 10px 0 ;    
+    border-radius: 0 10px 10px 0;
     border-left: none;
 }
 
@@ -122,7 +127,7 @@ li a:hover {
     border: 0px solid;
     background-color: lightgray;
     color: grey;
-    width: 20px;    
+    width: 20px;
     border-radius: 10px 0 0 10px;
     border-right: none;
 }
@@ -134,75 +139,166 @@ li a:hover {
 /*===================================MAIN STORY==========================================*/
 
 #MainStory {
-    padding: 15px 10%;
-    width: 80%;
-    column-count: 2;
-  }
+    display: flex;
+}
 
-  #MainStory h2{
-      font-size: 44px;
-      font-family: Helvetica, sans-serif;
-      font-weight: bold;
-      letter-spacing: 4%;
-  }
+#MainLeft {
+    width: 50%;
+}
 
-  #MainStory img{
+#MainRight {
+    width: 50%;
+    align-self: flex-end;
+}
+
+#MainStory h2 {
+    font-size: 44px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 4%;
+}
+
+#MainStory p {
+    color: black;
+}
+
+#MainStory img {
     width: 100%;
-  }
-  
+}
+
 /*===================================RELATED STORY==========================================*/
-#RelatedStory{
+
+#RelatedStory {
     display: flex;
     justify-content: space-between;
 }
 
-#MinorStoryBlock{
+#MinorStoryBlock {
     width: 30%;
 }
 
-#MinorStoryBlock img{
+#MinorStoryBlock img {
     width: 100%;
 }
 
-#AuthorCred{
+#AuthorCred {
     padding: 5% 0;
     display: flex;
     justify-content: space-between;
 }
 
-#AuthRight{
+#AuthRight {
     width: 70%;
     color: grey;
 }
 
-#AuthLeft{
+#AuthLeft {
     width: 30%;
     display: flex;
     justify-content: right;
 }
 
-#AuthLeft img{
+#AuthLeft img {
     height: fit-content;
     width: auto;
 }
 
-/*===================================ARTICLE STORY==========================================*/
+/*=======================POPULAR ARTICLE DIVISOR===========================*/
 
-#ArticleCard{
-    display: flex;
-    padding: 3% 0 0 0 ;
+#SeePopArt h3 {
+    text-align: right;
+    padding: 0 0 2% 0;
+    opacity: 80%;
 }
 
-#ArtCardRight{
+/*=======================POPULAR ARTICLE DIVISOR============================*/
+
+/*===================================ARTICLE STORY==========================================*/
+
+#ArticleCard {
+    display: flex;
+    padding: 3% 0 0 0;
+}
+
+#ArtCardRight {
     color: white;
     width: 30%;
 }
 
-#ArtCardLeft{
+#ArtCardLeft {
     width: 70%;
     padding: 0 0 0 5%;
 }
 
 #ArtCardPhoto {
     width: 100%;
+}
+
+#ArticleCard h2 {
+    padding: 0 0 2% 0;
+}
+
+#ArticleCard p {
+    color: #999999;
+    padding: 0 0 0 0;
+}
+
+/*===================================CONTACT US==========================================*/
+
+#Contact {
+    background-color: #316099;
+    width: 70%;
+    border-radius: 0 250px 0 0;
+    display: flex;
+}
+
+#Contact h2 {
+    color: white;
+}
+
+#Contact p {
+    font-size: 16px;
+}
+
+#Contact div {
+    width: 50%;
+    padding: 0 10%;
+}
+
+#Contact button {
+    text-align: center;
+    margin: auto;
+    padding: 1% 4% 1% 4%;
+    border-radius: 10px;
+    background-color: #5A98D0;
+    border: 0px;
+}
+
+/*===================================FOOOTER==========================================*/
+
+#footer {
+    background-color: #316099;
+    width: 70%;
+    display: flex;
+}
+
+#footer ul, li{
+    color:white;
+    list-style: none;
+    padding: 2% 0 2% 0;
+    font-size: 16px;
+}
+
+#footer h4{
+    font-size: 20px;
+}   
+
+#Company, #AboutUS, #FollowUS{
+    width: 40%;
+    margin: auto;
+    
+}
+
+#AboutUS, #FollowUS{
+    padding: 0 0 0 8% ;
 }
